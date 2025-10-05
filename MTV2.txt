@@ -41,6 +41,7 @@ int main()
 
     cout << "Welcome to the Math Tutor! " << userName << endl;
 
+    // VARRIABLES
     random_device rd;
     mt19937 gen(rd());
     uniform_int_distribution<> dist(1, 10);
@@ -52,6 +53,7 @@ int main()
     uniform_int_distribution<> dist3(1, 4);
     mathSymbolNumber = dist3(gen);
 
+    //SYMBOL randomizer
     if (mathSymbolNumber == 1) {
         correctAnswer = leftNum + rightNum;
         cout << "What is " << leftNum << "+" << rightNum << "..." <<  endl;
@@ -98,7 +100,7 @@ int main()
 
 
 
-
+    //answer checker and end of program
 
     cin >> userAnswer;
 
